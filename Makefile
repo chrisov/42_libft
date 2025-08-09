@@ -11,8 +11,9 @@
 #                                                                              #
 # **************************************************************************** #
 
-CC = gcc
-CFLAGS = -Wall -Werror -Wextra -IINCDIR
+CC = cc
+MAKEFLAGS +=s
+CFLAGS = -Wall -Werror -Wextra -I$(INCDIR)
 
 INCDIR = ./include
 SRCDIR = ./src
@@ -34,21 +35,23 @@ NAME = libft.a
 all: $(NAME)
 
 $(NAME): $(OBJDIR) $(OBJS)
+	@printf "[.]   📦 Compiling '\033[33m$(NAME)\033[0m'...\r"
 	ar rcs $(NAME) $(OBJS)
+	@echo "🚀 '\033[33m$(NAME)\033[0m' compiled \033[32msuccessfully\033[0m!"
 
-$(OBJDIR)/%.o: $(SRCDIR)/%.c
+$(OBJDIR)/%.o: $(SRCDIR)/%.c | $(OBJDIR)
 	$(CC) $(CFLAGS) -c $< -o $@
 
-%$(OBJDIR):
+$(OBJDIR):
 	mkdir -p $(OBJDIR)
 
 clean:
 	rm -f $(OBJDIR)/*.o
-	@echo "All build files cleaned up."
 
 fclean: clean
+	@printf "[.]   🧹 Removing '\033[33m$(NAME)\033[0m' build...\r"
 	rm -f $(NAME)
-	@echo "Executable cleaned up."
+	printf "[✅]  🧹 Removed '\033[33m$(NAME)\033[0m' build...  \n"
 
 re: fclean all
 

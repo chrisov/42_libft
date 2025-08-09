@@ -65,6 +65,13 @@ static void	free_split(char **table, size_t size)
 	free(table);
 }
 
+/**
+ * @brief Splits a string into an array of strings using a delimiter.
+ * 
+ * @param s String to split.
+ * @param c Delimiter character.
+ * @return Array of strings, NULL-terminated.
+ */
 char	**ft_split(char const *s, char c)
 {
 	char	**res;
@@ -91,14 +98,3 @@ char	**ft_split(char const *s, char c)
 	res[word_count] = NULL;
 	return (res);
 }
-
-// #include <stdio.h>
-// int	main(void)
-// {
-// 	const char	*s = "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse";
-// 	char		c = ' ';
-// 	char		**res = ft_split(s, c);
-// 	for (size_t i = 0; i < str_count(s, c); i++)
-// 		printf("%s\n", res[i]);
-// 	return (0);
-// }

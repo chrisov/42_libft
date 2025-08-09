@@ -12,6 +12,15 @@
 
 #include "../include/libft.h"
 
+/**
+ * @brief Converts a string to an integer.
+ * 
+ * Skips leading whitespace, handles optional sign, and parses digits.
+ * Returns 0 if multiple signs are present.
+ * 
+ * @param str The string to convert.
+ * @return The integer value represented by the string.
+ */
 int	ft_atoi(const char *str)
 {
 	int	res;

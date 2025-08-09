@@ -12,6 +12,12 @@
 
 #include "../include/libft.h"
 
+/**
+ * @brief Checks if a character is a digit.
+ * 
+ * @param c Character to check.
+ * @return 1 if digit, 0 otherwise.
+ */
 int	ft_isdigit(int c)
 {
 	if (c >= '0' && c <= '9')

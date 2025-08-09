@@ -12,6 +12,14 @@
 
 #include "../include/libft.h"
 
+/**
+ * @brief Copies src to dst, ensuring no overflow.
+ * 
+ * @param dest Destination buffer.
+ * @param src Source string.
+ * @param size Size of destination buffer.
+ * @return Length of src.
+ */
 size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
 	size_t	i;

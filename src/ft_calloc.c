@@ -12,6 +12,13 @@
 
 #include "../include/libft.h"
 
+/**
+ * @brief Allocates memory for an array and initializes all bytes to zero.
+ * 
+ * @param nmemb Number of elements.
+ * @param size Size of each element.
+ * @return Pointer to allocated memory, or NULL on failure.
+ */
 void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*ptr;

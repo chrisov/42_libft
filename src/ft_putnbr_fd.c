@@ -27,6 +27,12 @@ static int	ft_div(int num)
 	return (res);
 }
 
+/**
+ * @brief Writes an integer to a file descriptor.
+ * 
+ * @param n Integer to write.
+ * @param fd File descriptor.
+ */
 void	ft_putnbr_fd(int n, int fd)
 {
 	char	num;

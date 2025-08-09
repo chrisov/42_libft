@@ -12,6 +12,13 @@
 
 #include "../include/libft.h"
 
+/**
+ * @brief Applies a function to each character of a string to create a new string.
+ * 
+ * @param s Input string.
+ * @param f Function to apply.
+ * @return New string, or NULL on failure.
+ */
 char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 {
 	char			*res;

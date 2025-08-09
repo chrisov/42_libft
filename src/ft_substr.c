@@ -12,6 +12,14 @@
 
 #include "../include/libft.h"
 
+/**
+ * @brief Extracts a substring from a string.
+ * 
+ * @param s Input string.
+ * @param start Starting index.
+ * @param len Maximum length of substring.
+ * @return New substring, or NULL on failure.
+ */
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*substr;

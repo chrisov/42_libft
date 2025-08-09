@@ -12,6 +12,14 @@
 
 #include "../include/libft.h"
 
+/**
+ * @brief Copies memory area, handling overlap.
+ * 
+ * @param dst Destination memory area.
+ * @param src Source memory area.
+ * @param len Number of bytes to copy.
+ * @return Pointer to destination.
+ */
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	unsigned char			*d;

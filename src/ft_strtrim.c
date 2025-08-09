@@ -12,6 +12,13 @@
 
 #include "../include/libft.h"
 
+/**
+ * @brief Trims characters from the beginning and end of a string.
+ * 
+ * @param s1 String to trim.
+ * @param set Set of characters to remove.
+ * @return New trimmed string, or NULL on failure.
+ */
 char	*ft_strtrim(const char *s1, const char *set)
 {
 	const char	*start;

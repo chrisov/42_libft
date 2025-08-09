@@ -12,6 +12,14 @@
 
 #include "../include/libft.h"
 
+/**
+ * @brief Fills memory with a constant byte.
+ * 
+ * @param b Pointer to memory area.
+ * @param c Byte value to set.
+ * @param len Number of bytes to set.
+ * @return Pointer to memory area.
+ */
 void	*ft_memset(void *b, int c, size_t len)
 {
 	size_t			i;

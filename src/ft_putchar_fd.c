@@ -12,6 +12,12 @@
 
 #include "../include/libft.h"
 
+/**
+ * @brief Writes a character to a file descriptor.
+ * 
+ * @param c Character to write.
+ * @param fd File descriptor.
+ */
 void	ft_putchar_fd(char c, int fd)
 {
 	write (fd, &c, 1);

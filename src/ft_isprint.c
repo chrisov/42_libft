@@ -12,27 +12,15 @@
 
 #include "../include/libft.h"
 
+/**
+ * @brief Checks if a character is printable.
+ * 
+ * @param ch Character to check.
+ * @return 1 if printable, 0 otherwise.
+ */
 int	ft_isprint(int ch)
 {
 	if (ch >= 32 && ch <= 126)
 		return (1);
 	return (0);
 }
-
-// int	main(void)
-// {
-// 	const char	*str = "Hello World \t3!";
-//
-// 	printf("\nTest string: %s\n", str);
-// 	while (*str)
-// 	{
-// 		if (ft_isprint(*str) == 0)
-// 		{
-// 			printf("The argument contains non printable chars.\n");
-// 			return (0);
-// 		}
-// 		str++;
-// 	}
-// 	printf("The argument contains only printable chars.\n");
-// 	return (0);
-// }

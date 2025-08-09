@@ -12,6 +12,12 @@
 
 #include "../include/libft.h"
 
+/**
+ * @brief Calculates the length of a string.
+ * 
+ * @param str String to measure.
+ * @return Number of characters before null terminator.
+ */
 unsigned long	ft_strlen(const char str[])
 {
 	const char		*ptr;

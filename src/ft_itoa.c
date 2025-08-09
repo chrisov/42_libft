@@ -64,13 +64,19 @@ static char	*ft_inttochar(char *ptr, int n, int d)
 	return (ptr);
 }
 
+/**
+ * @brief Converts an integer to a string.
+ * 
+ * Handles negative numbers and INT_MIN.
+ * 
+ * @param n Integer to convert.
+ * @return Pointer to the string representation, or NULL on failure.
+ */
 char	*ft_itoa(int n)
 {
 	char	*result;
 	int		div;
-	int		i;
 
-	i = 0;
 	if (n == INT_MIN)
 		result = ft_strdup("-2147483648");
 	else

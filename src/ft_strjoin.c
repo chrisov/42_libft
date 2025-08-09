@@ -12,6 +12,14 @@
 
 #include "../include/libft.h"
 
+/**
+ * @brief Concatenates two strings into a new string.
+ * 
+ * @param s1 First string.
+ * @param s2 Second string.
+ * @return Pointer to new string, or NULL on failure.
+ */
+
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*concat_str;

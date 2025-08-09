@@ -12,6 +12,14 @@
 
 #include "../include/libft.h"
 
+/**
+ * @brief Scans memory for a character.
+ * 
+ * @param s Pointer to memory area.
+ * @param c Character to search for.
+ * @param n Number of bytes to scan.
+ * @return Pointer to first occurrence, or NULL if not found.
+ */
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	const unsigned char	*ptr;
